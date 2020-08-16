@@ -1,0 +1,64 @@
+{
+  "name": "mongo-graphql-starter",
+  "version": "0.9.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arackaf/mongo-graphql-starter.git"
+  },
+  "author": "Adam Rackis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arackaf/mongo-graphql-starter/issues"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "globalSetup": "<rootDir>/test/masterSetup.js"
+  },
+  "homepage": "https://github.com/arackaf/mongo-graphql-starter",
+  "devDependencies": {
+    "babel-jest": "21.2.0",
+    "babel-plugin-dynamic-import-node": "^1.2.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
+    "codecov": "^3.0.2",
+    "del": "3.0.0",
+    "dotenv": "^6.2.0",
+    "express": "4.16.1",
+    "express-graphql": "^0.7.1",
+    "glob": "^7.1.2",
+    "graphql": "^14.1.1",
+    "graphql-tools": "^4.0.4",
+    "jest": "^24.1.0",
+    "mongodb": "^3.1.13"
+  },
+  "scripts": {
+    "test-local": "jest --runInBand --config=test/jestConfig/jest.configRoot.json",
+    "test": "jest --runInBand --bail --detectOpenHandles --config=test/jestConfig/jest.config_travis.json && codecov",
+    "test1": "jest --runInBand --config=test/jestConfig/jest.config1.json",
+    "test2": "jest --runInBand --config=test/jestConfig/jest.config2.json",
+    "test3": "jest --runInBand --config=test/jestConfig/jest.config3.json",
+    "test4": "jest --runInBand --config=test/jestConfig/jest.config4.json",
+    "test5": "jest --runInBand --config=test/jestConfig/jest.config5.json",
+    "test6": "jest --runInBand --config=test/jestConfig/jest.config6.json",
+    "test7": "jest --runInBand --config=test/jestConfig/jest.config7.json",
+    "test8": "jest --runInBand --config=test/jestConfig/jest.config8.json",
+    "test9": "jest --runInBand --config=test/jestConfig/jest.config9.json"
+  },
+  "dependencies": {
+    "dataloader": "1.4.0",
+    "escape-string-regexp": "1.0.5",
+    "esm": "3.0.84",
+    "graphql-type-json": "0.2.1",
+    "lodash.flatmap": "4.5.0",
+    "mkdirp": "0.5.1"
+  },
+  "peerDependencies": {
+    "mongodb": ">= 2.2.31",
+    "graphql": ">= 0.13.2"
+  }
+}

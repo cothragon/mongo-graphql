@@ -1,0 +1,5 @@
+{
+  "rootDir": "../",
+  "testPathIgnorePatterns": ["testProject1/", "testProject4/"],
+  "testEnvironment": "node"
+}
